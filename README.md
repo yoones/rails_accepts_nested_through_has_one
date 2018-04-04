@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Trying to edit next of kin through profile's controller fails:
 
-Things you may want to cover:
+In `app/controllers/profiles_controller.rb:44`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+> ArgumentError in ProfilesController#update
+> Cannot build association `next_of_kin'. Are you trying to build a polymorphic one-to-one association?

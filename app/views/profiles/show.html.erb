@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @profile.last_name %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @profile.first_name %>
+</p>
+
+<div style="background-color: #ccc; padding: 15px; margin-bottom: 10px;">
+  <p>
+    <strong>Last name:</strong>
+    <%= @profile.next_of_kin.last_name %>
+  </p>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @profile.next_of_kin.first_name %>
+  </p>
+</div>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
